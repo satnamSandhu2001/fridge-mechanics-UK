@@ -5,14 +5,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, PhoneCallIcon, X } from 'lucide-react';
 import { useRef, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 const links = [
-	{ title: 'Home', url: '/#' },
+	{ title: 'Home', url: '/' },
 	{ title: 'Services', url: '/#' },
 	{ title: 'Contact us', url: '/#' },
 ];
 
 function Navbar() {
+	const pathname = usePathname();
+	console.log(pathname);
 	const menuRef = useRef<HTMLDivElement>(null);
 	const [isMenuOpen, setisMenuOpen] = useState<boolean>(false);
 
@@ -49,7 +52,11 @@ function Navbar() {
 							<Link
 								key={i}
 								href={link.url}
-								className="font-medium underline decoration-2 underline-offset-8 decoration-transparent hover:decoration-primary transition-all"
+								className={`font-medium underline decoration-2 underline-offset-8 hover:decoration-primary transition-all ${
+									pathname === link.url
+										? 'text-primary decoration-primary'
+										: 'text-black decoration-transparent'
+								}`}
 							>
 								{link.title}
 							</Link>
@@ -72,7 +79,11 @@ function Navbar() {
 							<Link
 								key={i}
 								href={link.url}
-								className="font-medium underline decoration-2 underline-offset-8 decoration-transparent hover:decoration-primary transition-all"
+								className={`font-medium underline decoration-2 underline-offset-8 hover:decoration-primary transition-all ${
+									pathname === link.url
+										? 'text-primary decoration-primary'
+										: 'text-black decoration-transparent'
+								}`}
 							>
 								{link.title}
 							</Link>
