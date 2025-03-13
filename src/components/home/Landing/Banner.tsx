@@ -2,6 +2,8 @@ import Image from 'next/image';
 import { StaticImageData } from 'next/image';
 import { Cog } from 'lucide-react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { slideUp, staggerChildrenVariant } from '@/lib/framer';
 
 export interface BannerData {
 	title: string;
@@ -10,7 +12,12 @@ export interface BannerData {
 
 export default function Banner(props: BannerData) {
 	return (
-		<div className="relative select-none">
+		<motion.div
+			variants={staggerChildrenVariant}
+			initial="hidden"
+			whileInView="visible"
+			className="relative select-none"
+		>
 			<Image
 				src={props.bg}
 				alt="Fridge repair mechanics"
@@ -22,19 +29,28 @@ export default function Banner(props: BannerData) {
 
 			<div className="container min-h-[92vh] flex items-center justify-start flex-col-reverse md:justify-between md:flex-row gap-8 pb-20">
 				<div>
-					<p className="text-primary font-medium flex items-center justify-center md:justify-start gap-2 h5">
+					<motion.p
+						variants={slideUp}
+						className="text-primary font-medium flex items-center justify-center md:justify-start gap-2 h5"
+					>
 						<Cog size={22} /> Repairing Services
-					</p>
-					<h1 className="text-center md:text-left text-white text-4xl leading-snug sm:text-5xl sm:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight 2xl:max-w-3xl font-bold max-w-xl tracking-wide">
+					</motion.p>
+					<motion.h1
+						variants={slideUp}
+						className="text-center md:text-left text-white text-4xl leading-snug sm:text-5xl sm:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight 2xl:max-w-3xl font-bold max-w-xl tracking-wide"
+					>
 						{props.title}
-					</h1>
-					<div className="mt-6 flex justify-center md:justify-start">
+					</motion.h1>
+					<motion.div
+						variants={slideUp}
+						className="mt-6 flex justify-center md:justify-start"
+					>
 						<Link href="/contact" className="button-primary">
 							Book Online
 						</Link>
-					</div>
+					</motion.div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 }

@@ -1,3 +1,7 @@
+'use client';
+
+import { fadeIn } from '@/lib/framer';
+import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 
@@ -9,7 +13,7 @@ type Props = {
 
 function Card(props: Props) {
 	return (
-		<div>
+		<motion.div variants={fadeIn}>
 			<Image
 				src={props.icon}
 				alt={props.title}
@@ -17,7 +21,7 @@ function Card(props: Props) {
 			/>
 			<h5 className="h6">{props.title}</h5>
 			<p className="text-gray-500 mt-2">{props.desc}</p>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,15 +1,22 @@
-import { TESTIMONIAL_BG, TESTIMONIAL_IMG } from '@/utils/assets';
+'use client';
+
+import { TESTIMONIAL_BG, TESTIMONIAL_IMG } from '@/lib/assets';
+import { slideLeft, slideRight, staggerChildrenVariant } from '@/lib/framer';
+import { motion } from 'framer-motion';
 import { Command, MapPin, Quote, Star, StarHalf, User2 } from 'lucide-react';
 import React from 'react';
 
 function Testimonials() {
 	return (
-		<section
+		<motion.section
+			variants={staggerChildrenVariant}
+			initial="hidden"
+			whileInView="visible"
 			className="py-16 md:py-32 bg-cover bg-center bg-no-repeat text-white relative"
 			style={{ backgroundImage: `url(${TESTIMONIAL_BG.src})` }}
 		>
 			<div className="container grid lg:grid-cols-2">
-				<div>
+				<motion.div variants={slideRight}>
 					<p className="text-primary font-medium flex items-center gap-2 h5">
 						<Command size={20} strokeWidth={1.5} className="animate-fan" />
 						Testimonials
@@ -42,11 +49,12 @@ function Testimonials() {
 							</div>
 						</div>
 					</div>
-				</div>
+				</motion.div>
 				<div />
 			</div>
 
-			<div
+			<motion.div
+				variants={slideLeft}
 				className="hidden lg:inline-block absolute top-0 right-0 h-full w-[40%] bg-cover bg-left bg-no-repeat"
 				style={{ backgroundImage: `url(${TESTIMONIAL_IMG.src})` }}
 			>
@@ -57,8 +65,8 @@ function Testimonials() {
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</motion.div>
+		</motion.section>
 	);
 }
 

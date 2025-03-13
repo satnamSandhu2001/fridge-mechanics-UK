@@ -1,5 +1,7 @@
 'use client';
 
+import { slideUp, staggerChildrenVariant } from '@/lib/framer';
+import { motion } from 'framer-motion';
 import { Command, Minus, Plus } from 'lucide-react';
 import React, { useState } from 'react';
 
@@ -36,24 +38,35 @@ function FAQ() {
 	const [activeQuestion, setActiveQuestion] = useState(0);
 
 	return (
-		<section className="py-16 md:py-32 bg-cover bg-top bg-no-repeat relative">
+		<motion.section
+			variants={staggerChildrenVariant}
+			initial="hidden"
+			whileInView="visible"
+			className="py-16 md:py-32 bg-cover bg-top bg-no-repeat relative"
+		>
 			<div className="container">
-				<p className="text-primary font-medium flex items-center gap-2 h5">
+				<motion.p
+					variants={slideUp}
+					className="text-primary font-medium flex items-center gap-2 h5"
+				>
 					<Command size={20} strokeWidth={1.5} className="animate-fan" />
 					FAQ
-				</p>
+				</motion.p>
 
-				<h3 className="h1 mt-2">Frequently Asked Questions</h3>
-				<p className="mt-4 text-gray-500 max-w-4xl">
+				<motion.h3 variants={slideUp} className="h1 mt-2">
+					Frequently Asked Questions
+				</motion.h3>
+				<motion.p variants={slideUp} className="mt-4 text-gray-500 max-w-4xl">
 					We&apos;ve compiled a list of frequently asked questions to help you
 					understand our electrical and plumbing services. If you don&apos;t
 					find the answer you&apos;re looking for, please don&apos;t hesitate to
 					contact us.
-				</p>
+				</motion.p>
 
 				<div className="mt-8 space-y-4">
 					{questions.map((q, i) => (
-						<div
+						<motion.div
+							variants={slideUp}
 							key={i}
 							className={`border rounded-xl transition-[border-color] duration-500 ${
 								activeQuestion === i ? 'border-primary' : 'border-slate-200'
@@ -83,11 +96,11 @@ function FAQ() {
 									<p className="p-4">{q.answer}</p>
 								</div>
 							</div>
-						</div>
+						</motion.div>
 					))}
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 

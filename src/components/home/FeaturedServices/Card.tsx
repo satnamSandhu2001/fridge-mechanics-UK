@@ -1,7 +1,10 @@
 import React from 'react';
 import Image, { StaticImageData } from 'next/image';
+import { motion } from 'framer-motion';
+import { slideLeft, slideRight } from '@/lib/framer';
 
 type Props = {
+	index: number;
 	title: string;
 	subtitle: string;
 	image: StaticImageData;
@@ -9,7 +12,10 @@ type Props = {
 
 function Card(props: Props) {
 	return (
-		<div className="bg-white p-4 sm:p-10 flex items-center justify-center flex-col rounded-xl text-center">
+		<motion.div
+			variants={props.index % 2 == 0 ? slideRight : slideLeft}
+			className="bg-white p-4 sm:p-10 flex items-center justify-center flex-col rounded-xl text-center"
+		>
 			<div className="flex justify-center items-center bg-primary/20 p-6 aspect-square h-28 rounded-xl overflow-hidden mb-6">
 				<Image
 					src={props.image}
@@ -19,7 +25,7 @@ function Card(props: Props) {
 			</div>
 			<h4 className="h6">{props.title}</h4>
 			<p className="font-medium text-gray-500">{props.subtitle}</p>
-		</div>
+		</motion.div>
 	);
 }
 

@@ -1,5 +1,5 @@
 'use client';
-import { SLIDE_1, SLIDE_2 } from '@/utils/assets';
+import { SLIDE_1, SLIDE_2 } from '@/lib/assets';
 import Banner, { BannerData } from './Banner';
 import { Carousel } from 'react-responsive-carousel';
 
@@ -21,6 +21,7 @@ function Landing() {
 				autoPlay
 				emulateTouch
 				infiniteLoop
+				stopOnHover={false}
 				showIndicators={false}
 				showThumbs={false}
 				showStatus={false}

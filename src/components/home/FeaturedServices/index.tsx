@@ -1,15 +1,19 @@
+'use client';
+
 import {
 	AIR_CONDITIONER_ICON,
 	APPLIANCES_ICON,
 	PLUMBING_ICON,
 	SERVICE_FEATURED,
 	WIRING_ICON,
-} from '@/utils/assets';
+} from '@/lib/assets';
 import { ArrowBigRightDash, Command } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import Card from './Card';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { fadeIn, slideUp, staggerChildrenVariant } from '@/lib/framer';
 
 const servicesList = [
 	{
@@ -36,22 +40,32 @@ const servicesList = [
 
 function FeaturedServices() {
 	return (
-		<section className="py-16 sm:py-32 relative bg-gray-100">
+		<motion.section
+			variants={staggerChildrenVariant}
+			initial="hidden"
+			whileInView="visible"
+			className="py-16 sm:py-32 relative bg-gray-100"
+		>
 			<div className="container z-10 relative">
-				<p className="text-primary font-medium flex items-center justify-center gap-2 h5">
+				<motion.p
+					variants={slideUp}
+					className="text-primary font-medium flex items-center justify-center gap-2 h5"
+				>
 					<Command size={20} strokeWidth={1.5} className="animate-fan" />
 					Featured Services
-				</p>
+				</motion.p>
 
-				<h3 className="h1 mt-2 text-center">What We Can Offer You</h3>
+				<motion.h3 variants={slideUp} className="h1 mt-2 text-center">
+					What We Can Offer You
+				</motion.h3>
 
 				<div className="grid lg:grid-cols-2 gap-4 mt-16">
 					<div className="grid grid-cols-2 gap-4">
 						{servicesList.map((item, i) => (
-							<Card key={i} {...item} />
+							<Card key={i} {...item} index={i} />
 						))}
 					</div>
-					<div className="relative h-full">
+					<motion.div variants={fadeIn} className="relative h-full">
 						<div className="w-full h-full">
 							<Image
 								src={SERVICE_FEATURED}
@@ -77,10 +91,10 @@ function FeaturedServices() {
 								/>
 							</Link>
 						</div>
-					</div>
+					</motion.div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 export default FeaturedServices;

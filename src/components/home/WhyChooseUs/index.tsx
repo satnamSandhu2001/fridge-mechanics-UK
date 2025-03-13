@@ -1,4 +1,5 @@
-import { Command, icons } from 'lucide-react';
+'use client';
+import { Command } from 'lucide-react';
 import React from 'react';
 import Card from './Card';
 import {
@@ -7,7 +8,9 @@ import {
 	CHOOSE_US_ICON_3,
 	CHOOSE_US_ICON_4,
 	WHY_CHOOSE_US_BG,
-} from '@/utils/assets';
+} from '@/lib/assets';
+import { motion } from 'framer-motion';
+import { slideUp, staggerChildrenVariant } from '@/lib/framer';
 
 const featureList = [
 	{
@@ -34,20 +37,26 @@ const featureList = [
 
 function WhyChooseUs() {
 	return (
-		<section
+		<motion.section
+			variants={staggerChildrenVariant}
+			initial="hidden"
+			whileInView="visible"
 			className="py-16 md:py-32 bg-cover bg-center bg-no-repeat"
 			style={{ backgroundImage: `url(${WHY_CHOOSE_US_BG.src})` }}
 		>
 			<div className="container">
 				<div className="lg:max-w-3xl lg:ml-[28%] mx-auto">
-					<p className="text-primary font-medium flex items-center gap-2 h5">
+					<motion.p
+						variants={slideUp}
+						className="text-primary font-medium flex items-center gap-2 h5"
+					>
 						<Command size={20} strokeWidth={1.5} className="animate-fan" />
 						Why Choose Us
-					</p>
+					</motion.p>
 
-					<h3 className="h1 mt-2">
+					<motion.h3 variants={slideUp} className="h1 mt-2">
 						Discover Why Our Commitment to Quality Service Sets Us Apart.
-					</h3>
+					</motion.h3>
 
 					<div className="mt-8 grid grid-cols-2 gap-4 md:gap-8">
 						{featureList.map((item, i) => (
@@ -56,7 +65,7 @@ function WhyChooseUs() {
 					</div>
 				</div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 

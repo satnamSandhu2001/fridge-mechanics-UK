@@ -1,4 +1,8 @@
-import { ABOUT_IMG_1, ABOUT_IMG_2, ABOUT_IMG_3 } from '@/utils/assets';
+'use client';
+
+import { ABOUT_IMG_1, ABOUT_IMG_2, ABOUT_IMG_3 } from '@/lib/assets';
+import { fadeIn, slideLeft, staggerChildrenVariant } from '@/lib/framer';
+import { motion } from 'framer-motion';
 import { Command, PhoneCall, Stars } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,9 +10,17 @@ import React from 'react';
 
 function About() {
 	return (
-		<section className="py-16 sm:py-32">
+		<motion.section
+			variants={staggerChildrenVariant}
+			initial="hidden"
+			whileInView="visible"
+			className="py-16 sm:py-32"
+		>
 			<div className="container flex flex-col-reverse lg:flex-row gap-x-16 gap-y-8">
-				<div className="grid grid-cols-2 gap-4 h-[250px] lg:h-auto lg:flex-1/2">
+				<motion.div
+					variants={fadeIn}
+					className="grid grid-cols-2 gap-4 h-[250px] lg:h-auto lg:flex-1/2"
+				>
 					<div className="h-full w-full relative rounded-xl overflow-hidden">
 						<Image
 							src={ABOUT_IMG_1}
@@ -35,8 +47,8 @@ function About() {
 							/>
 						</div>
 					</div>
-				</div>
-				<div className="lg:flex-1/2 lg:py-10">
+				</motion.div>
+				<motion.div variants={slideLeft} className="lg:flex-1/2 lg:py-10">
 					<p className="text-primary font-medium flex items-center gap-2 h5">
 						<Command size={20} strokeWidth={1.5} className="animate-fan" />
 						About Us
@@ -87,9 +99,9 @@ function About() {
 							<p className="font-semibold mt-1">(+44) 0777 0777 980</p>
 						</div>
 					</Link>
-				</div>
+				</motion.div>
 			</div>
-		</section>
+		</motion.section>
 	);
 }
 

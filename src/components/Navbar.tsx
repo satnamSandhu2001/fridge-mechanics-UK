@@ -1,6 +1,6 @@
 'use client';
 
-import { LOGO } from '@/utils/assets';
+import { LOGO } from '@/lib/assets';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, PhoneCallIcon, X } from 'lucide-react';

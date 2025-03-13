@@ -7,7 +7,7 @@ import WhyChooseUs from '@/components/home/WhyChooseUs';
 
 export default function Home() {
 	return (
-		<section>
+		<section className="w-full overflow-hidden">
 			<Landing />
 			<About />
 			<FeaturedServices />
