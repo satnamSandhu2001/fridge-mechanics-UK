@@ -1,6 +1,6 @@
 import LOGO from '@/assets/logo.png';
-import HOME_BG from '@/assets/home-bg.jpg';
-import REPAIRMAN from '@/assets/repairman.png';
+import SLIDE_1 from '@/assets/slide1.jpg';
+import SLIDE_2 from '@/assets/slide2.jpg';
 import ABOUT_IMG_1 from '@/assets/about-img-1.jpg';
 import ABOUT_IMG_2 from '@/assets/about-img-2.jpg';
 import ABOUT_IMG_3 from '@/assets/about-img-3.jpg';
@@ -19,8 +19,8 @@ import TESTIMONIAL_IMG from '@/assets/testimonial_img.png';
 
 export {
 	LOGO,
-	HOME_BG,
-	REPAIRMAN,
+	SLIDE_1,
+	SLIDE_2,
 	ABOUT_IMG_1,
 	ABOUT_IMG_2,
 	ABOUT_IMG_3,

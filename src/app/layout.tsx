@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const PlusJakartaSans = Plus_Jakarta_Sans({
 	variable: '--font-sans',

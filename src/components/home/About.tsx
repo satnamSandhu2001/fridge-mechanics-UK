@@ -6,7 +6,7 @@ import React from 'react';
 
 function About() {
 	return (
-		<section className="py-32">
+		<section className="py-16 sm:py-32">
 			<div className="container flex flex-col-reverse lg:flex-row gap-x-16 gap-y-8">
 				<div className="grid grid-cols-2 gap-4 h-[250px] lg:h-auto lg:flex-1/2">
 					<div className="h-full w-full relative rounded-xl overflow-hidden">

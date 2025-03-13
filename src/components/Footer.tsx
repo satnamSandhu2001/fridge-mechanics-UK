@@ -14,8 +14,8 @@ function Footer() {
 						vitae dicta dolorem amet voluptate.
 					</p>
 					<div className="font-bold mt-3">
-						<p className="text-primary">Emergency: </p>
-						<p className="text-lg hover:text-primary transition-colors">
+						<p className="text-sm text-primary">Emergency: </p>
+						<p className="hover:text-primary transition-colors">
 							<Link href="tel:+4407770777980" target="_blank">
 								(+44) 0777 0777 980
 							</Link>

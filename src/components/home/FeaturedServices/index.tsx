@@ -1,7 +1,6 @@
 import {
 	AIR_CONDITIONER_ICON,
 	APPLIANCES_ICON,
-	HOME_BG,
 	PLUMBING_ICON,
 	SERVICE_FEATURED,
 	WIRING_ICON,
@@ -37,10 +36,7 @@ const servicesList = [
 
 function FeaturedServices() {
 	return (
-		<section
-			className="py-24 relative bg-fixed bg-cover bg-no-repeat"
-			style={{ backgroundImage: `url(${HOME_BG.src})` }}
-		>
+		<section className="py-16 sm:py-32 relative bg-gray-100">
 			<div className="container z-10 relative">
 				<p className="text-primary font-medium flex items-center justify-center gap-2 h5">
 					<Command size={20} strokeWidth={1.5} className="animate-fan" />
@@ -64,7 +60,7 @@ function FeaturedServices() {
 							/>
 						</div>
 
-						<div className="bg-slate-100 absolute bottom-5 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-5 z-10 w-[90%] md:w-[70%] p-8 rounded-xl">
+						<div className="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-5 z-10 w-[90%] md:w-[70%] p-8 rounded-xl">
 							<p>
 								We offer complete electrical, plumbing, and AC services,
 								including appliance work and custom wiring, for seamless home
