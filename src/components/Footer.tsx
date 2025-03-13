@@ -10,8 +10,10 @@ function Footer() {
 						About Us
 					</h5>
 					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-						vitae dicta dolorem amet voluptate.
+						We&apos;ve been providing dependable fridge repairing, plumbing, and
+						electrical services from decade. Our skilled technicians are
+						committed to delivering quality repairs and installations you can
+						count on.
 					</p>
 					<div className="font-bold mt-3">
 						<p className="text-sm text-primary">Emergency: </p>

@@ -7,6 +7,11 @@ import React, { useState } from 'react';
 
 const questions = [
 	{
+		question: 'Where do you provide service?',
+		answer:
+			'We proudly provide our electrical and plumbing services throughout the entire county of Berkshire, including major towns such as Slough, Bracknell, Maidenhead, Reading, Newbury, Wokingham, and all surrounding areas. Please contact us to confirm if we serve your specific location.',
+	},
+	{
 		question: 'Do you repair all types of electrical appliances?',
 		answer:
 			'We service a wide range of major electrical appliances, including refrigerators, ovens, stoves, dishwashers, washing machines, and dryers. If you have a specific appliance in need of repair, please contact us to confirm.',

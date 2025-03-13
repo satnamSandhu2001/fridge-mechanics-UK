@@ -56,30 +56,31 @@ function About() {
 
 					<h3 className="h1 mt-2">We Provide Experienced & Quality Services</h3>
 					<p className="mt-6 text-gray-500">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
-						debitis reiciendis alias natus amet fugit, consectetur, iusto, at
-						asperiores reprehenderit sit impedit nisi inventore illo in ullam!
-						Saepe, voluptatem reprehenderit?
+						We pride ourselves on our commitment to quality workmanship, using
+						only the best materials and employing skilled technicians who are
+						passionate about their craft. From minor repairs to major
+						installations, we handle every project with professionalism and
+						attention to detail.
 					</p>
 					<div className="grid grid-cols-2 gap-6 rounded-xl my-6 text-gray-500">
 						<div className="flex flex-col gap-3">
 							<p className="flex items-center gap-2 font-medium">
 								<Stars size={20} className="text-primary" />
-								Warrantes & Gurantees
+								Experienced Professionals
 							</p>
 							<p className="flex items-center gap-2 font-medium">
 								<Stars size={20} className="text-primary" />
-								Exceed Expectation
+								Quality Workmanship
 							</p>
 						</div>
 						<div className="flex flex-col gap-3">
 							<p className="flex items-center gap-2 font-medium">
 								<Stars size={20} className="text-primary" />
-								Online Schedule
+								Prompt Response
 							</p>
 							<p className="flex items-center gap-2 font-medium">
 								<Stars size={20} className="text-primary" />
-								Financing Available
+								Customer Satisfaction
 							</p>
 						</div>
 					</div>
