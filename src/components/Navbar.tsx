@@ -15,7 +15,6 @@ const links = [
 
 function Navbar() {
 	const pathname = usePathname();
-	console.log(pathname);
 	const menuRef = useRef<HTMLDivElement>(null);
 	const [isMenuOpen, setisMenuOpen] = useState<boolean>(false);
 
