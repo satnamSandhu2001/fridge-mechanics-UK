@@ -9,7 +9,7 @@ const slides: BannerData[] = [
 		bg: SLIDE_1,
 	},
 	{
-		title: 'Your Trusted Solution for All Plumbing Needs',
+		title: '24/7 Fridge Repair, Call Us Anytime. Fast Service.',
 		bg: SLIDE_2,
 	},
 ];

@@ -2,7 +2,7 @@
 
 @theme {
 	--color-primary: #ff4e00;
-	--color-secondary: #243f8d;
+	--color-secondary: #1a2c61;
 }
 
 @layer utilities {
@@ -10,7 +10,7 @@
 		@apply w-full mx-auto max-w-[90%] 2xl:max-w-[1350px];
 	}
 	.text {
-		@apply text-base leading-relaxed;
+		@apply text-base leading-relaxed text-[#010f34];
 	}
 	.h1 {
 		@apply text-3xl leading-tight sm:text-4xl sm:leading-tight md:text-5xl md:leading-snug font-bold;
@@ -22,10 +22,9 @@
 		@apply text-3xl font-bold leading-snug;
 	}
 	.h4 {
-		@apply text-2xl font-bold leading-snug;
+		@apply text-xl leading-snug md:text-2xl md:leading-snug font-bold;
 	}
 	.h5 {
-		@apply text-xl font-bold leading-snug;
 		@apply text-lg leading-snug md:text-xl md:leading-snug font-bold;
 	}
 	.h6 {
@@ -39,7 +38,7 @@
 		animation: spin 5s linear infinite;
 	}
 	.shadow-soft {
-		@apply shadow-[0px_2px_10px_rgba(0,0,0,0,1)];
+		@apply shadow-[0px_6px_30px_0px_rgba(0,0,0,0.05)];
 	}
 }
 body {

@@ -1,11 +1,11 @@
 'use client';
 
 import {
-	AIR_CONDITIONER_ICON,
-	APPLIANCES_ICON,
-	PLUMBING_ICON,
+	FRIDGE_IMG_1,
+	FRIDGE_IMG_2,
+	FRIDGE_IMG_3,
+	FRIDGE_IMG_4,
 	SERVICE_FEATURED,
-	WIRING_ICON,
 } from '@/lib/assets';
 import { ArrowBigRightDash, Command } from 'lucide-react';
 import Image from 'next/image';
@@ -17,24 +17,24 @@ import { fadeIn, slideUp, staggerChildrenVariant } from '@/lib/framer';
 
 const servicesList = [
 	{
-		title: 'Electrical Applicances',
+		title: 'Fridge',
 		subtitle: 'Repairing',
-		image: APPLIANCES_ICON,
+		image: FRIDGE_IMG_1,
 	},
 	{
-		title: 'Plumbing service',
+		title: 'Refrigerator',
 		subtitle: 'Repairing',
-		image: PLUMBING_ICON,
+		image: FRIDGE_IMG_2,
 	},
 	{
-		title: 'Air Conditioner',
+		title: 'Commercial Fridge',
 		subtitle: 'Repairing',
-		image: AIR_CONDITIONER_ICON,
+		image: FRIDGE_IMG_3,
 	},
 	{
-		title: 'Electric Solutions',
+		title: 'Ice Maker',
 		subtitle: 'Repairing',
-		image: WIRING_ICON,
+		image: FRIDGE_IMG_4,
 	},
 ];
 
@@ -45,6 +45,7 @@ function FeaturedServices() {
 			initial="hidden"
 			whileInView="visible"
 			className="py-16 sm:py-32 relative bg-gray-100"
+			id="services"
 		>
 			<div className="container z-10 relative">
 				<motion.p
@@ -76,9 +77,8 @@ function FeaturedServices() {
 
 						<div className="bg-white absolute bottom-5 left-1/2 -translate-x-1/2 md:translate-x-0 md:left-5 z-10 w-[90%] md:w-[70%] p-8 rounded-xl">
 							<p>
-								We offer complete electrical, plumbing, and AC services,
-								including appliance work and custom wiring, for seamless home
-								and business function.
+								Our technicians are skilled in diagnosing and fixing all types
+								of refrigerator issues.
 							</p>
 							<Link
 								href="/#"

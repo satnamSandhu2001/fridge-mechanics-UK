@@ -94,10 +94,9 @@ function About() {
 							<PhoneCall color="#fff" size={23} strokeWidth={1.5} />
 						</div>
 						<div>
-							<p className="text-sm text-gray-500">
-								Call us anytime. we are available 24*7
+							<p className="font-medium mt-1">
+								(+41) 0777 0777 980 <br /> info@fridgemechanics.co.uk
 							</p>
-							<p className="font-semibold mt-1">(+44) 0777 0777 980</p>
 						</div>
 					</Link>
 				</motion.div>

@@ -3,7 +3,7 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<footer>
+		<footer className="bg-slate-100">
 			<div className="container grid sm:grid-cols-2 md:grid-cols-3 gap-16 py-16 sm:py-32">
 				<div>
 					<h5 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
@@ -65,8 +65,8 @@ function Footer() {
 						<div>
 							<p className="font-semibold">Email: </p>
 							<p className="hover:text-primary transition-colors">
-								<Link href="mail:fridgemechanics786@gmail.com" target="_blank">
-									fridgemechanics786@gmail.com
+								<Link href="mail:info@fridgemechanics.co.uk" target="_blank">
+									info@fridgemechanics.co.uk
 								</Link>
 							</p>
 						</div>
@@ -76,7 +76,7 @@ function Footer() {
 
 			<div className="container border-t border-gray-200 py-6 text-center">
 				@{new Date().getFullYear()} All right Reserved by{' '}
-				<span className="text-primary">fridgemechanics.com</span>
+				<span className="text-primary">fridgemechanics.co.uk</span>
 			</div>
 		</footer>
 	);

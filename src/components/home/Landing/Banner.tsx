@@ -27,7 +27,7 @@ export default function Banner(props: BannerData) {
 			/>
 			<div className="bg-gradient-to-b md:bg-gradient-to-l from-transparent via-secondary/70 md:via-70% to-secondary/90 absolute top-0 left-0 w-full h-full -z-[9]" />
 
-			<div className="container min-h-[92vh] flex items-center justify-start flex-col-reverse md:justify-between md:flex-row gap-8 pb-20">
+			<div className="container min-h-[85vh] md:min-h-[88vh] flex items-center justify-start flex-col-reverse md:justify-between md:flex-row gap-8 pb-20 md:pb-0">
 				<div>
 					<motion.p
 						variants={slideUp}

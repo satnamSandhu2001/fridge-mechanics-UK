@@ -12,30 +12,24 @@ const questions = [
 			'We proudly provide our electrical and plumbing services throughout the entire county of Berkshire, including major towns such as Slough, Bracknell, Maidenhead, Reading, Newbury, Wokingham, and all surrounding areas. Please contact us to confirm if we serve your specific location.',
 	},
 	{
-		question: 'Do you repair all types of electrical appliances?',
+		question: 'What types of fridges do you repair?',
 		answer:
-			'We service a wide range of major electrical appliances, including refrigerators, ovens, stoves, dishwashers, washing machines, and dryers. If you have a specific appliance in need of repair, please contact us to confirm.',
+			'We repair all types of fridges, including single door, double door, side-by-side, deep freezers, inverter fridges, and more.',
 	},
 	{
-		question: 'What plumbing services do you offer?',
+		question: 'Do you offer emergency fridge repair services?',
 		answer:
-			'Our plumbing services include leak detection and repair, drain cleaning, pipe repair and replacement, fixture installation, and water heater services.',
+			'Yes, we understand that a broken fridge can be a major inconvenience. We offer prompt and reliable emergency fridge repair services.',
 	},
 	{
-		question: 'How quickly can you respond to an emergency plumbing leak?',
+		question: 'Are your technicians experienced in repairing inverter fridges?',
 		answer:
-			'We understand that plumbing emergencies require immediate attention. Our team is available 24/7 and we strive to respond immediate to address urgent issues and minimize damage.',
+			'Yes, our technicians are trained and experienced in repairing modern inverter fridges.',
 	},
 	{
-		question:
-			'Can you provide a quote before starting any electrical or plumbing work?',
+		question: 'Can you provide a quote before starting work?',
 		answer:
-			"Absolutely. We provide free, no-obligation quotes for all our electrical and plumbing services. We'll assess your needs and provide a detailed estimate before any work begins.",
-	},
-	{
-		question: 'Are your electricians licensed and insured?',
-		answer:
-			'Yes, all of our electricians are fully licensed and insured, ensuring that your electrical work is handled by qualified professionals and meets all safety standards.',
+			"Absolutely. We provide free, no-obligation quotes for all our services. We'll assess your needs and provide a detailed estimate before any work begins.",
 	},
 ];
 
@@ -81,7 +75,7 @@ function FAQ() {
 								onClick={() => {
 									setActiveQuestion(i);
 								}}
-								className="cursor-pointer h6 p-4 rounded-xl flex justify-between items-center"
+								className="cursor-pointer h6 p-4 rounded-xl flex justify-between items-center gap-4"
 							>
 								{q.question}
 								<span className="bg-black rounded-full h-6 aspect-square flex justify-center items-center p-1">

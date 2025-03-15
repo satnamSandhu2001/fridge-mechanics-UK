@@ -5,10 +5,10 @@ import ABOUT_IMG_1 from '@/assets/about-img-1.webp';
 import ABOUT_IMG_2 from '@/assets/about-img-2.webp';
 import ABOUT_IMG_3 from '@/assets/about-img-3.webp';
 import SERVICE_FEATURED from '@/assets/service-featured.webp';
-import APPLIANCES_ICON from '@/assets/electronics.png';
-import PLUMBING_ICON from '@/assets/plumbing.png';
-import AIR_CONDITIONER_ICON from '@/assets/air-conditioner.png';
-import WIRING_ICON from '@/assets/wiring.png';
+import FRIDGE_IMG_1 from '@/assets/fridge-1.webp';
+import FRIDGE_IMG_2 from '@/assets/fridge-2.webp';
+import FRIDGE_IMG_3 from '@/assets/fridge-3.webp';
+import FRIDGE_IMG_4 from '@/assets/fridge-4.webp';
 import CHOOSE_US_ICON_1 from '@/assets/why_chose_us_1.svg';
 import CHOOSE_US_ICON_2 from '@/assets/why_chose_us_2.svg';
 import CHOOSE_US_ICON_3 from '@/assets/why_chose_us_3.svg';
@@ -16,6 +16,7 @@ import CHOOSE_US_ICON_4 from '@/assets/why_chose_us_4.svg';
 import WHY_CHOOSE_US_BG from '@/assets/why_chose_us_bg_1.webp';
 import TESTIMONIAL_BG from '@/assets/testimonial-bg.svg';
 import TESTIMONIAL_IMG from '@/assets/testimonial_img.png';
+import BREADCRUMB_BG from '@/assets/page-banner.webp';
 
 export {
 	LOGO,
@@ -25,10 +26,10 @@ export {
 	ABOUT_IMG_2,
 	ABOUT_IMG_3,
 	SERVICE_FEATURED,
-	APPLIANCES_ICON,
-	PLUMBING_ICON,
-	AIR_CONDITIONER_ICON,
-	WIRING_ICON,
+	FRIDGE_IMG_1,
+	FRIDGE_IMG_2,
+	FRIDGE_IMG_3,
+	FRIDGE_IMG_4,
 	CHOOSE_US_ICON_1,
 	CHOOSE_US_ICON_2,
 	CHOOSE_US_ICON_3,
@@ -36,4 +37,5 @@ export {
 	WHY_CHOOSE_US_BG,
 	TESTIMONIAL_BG,
 	TESTIMONIAL_IMG,
+	BREADCRUMB_BG,
 };
