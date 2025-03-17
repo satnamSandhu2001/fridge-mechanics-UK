@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const slides: BannerData[] = [
 	{
-		title: 'Domestic and commercial fridge repair service',
+		title: 'Domestic And Commercial Fridge Repair Service',
 		bg: SLIDE_1,
 	},
 	{
