@@ -4,7 +4,7 @@ import React from 'react';
 function Footer() {
 	return (
 		<footer className="bg-blue-50">
-			<div className="container grid sm:grid-cols-2 md:grid-cols-3 gap-16 py-16 sm:py-20">
+			<div className="container grid sm:grid-cols-2 gap-x-24 gap-y-8 py-16 sm:py-20">
 				<div>
 					<h5 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
 						About Us
@@ -23,29 +23,6 @@ function Footer() {
 							</Link>
 						</p>
 					</div>
-				</div>
-
-				<div>
-					<h5 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
-						Services
-					</h5>
-					<ul className="list-inside list-disc">
-						<li className="hover:text-primary transition-colors">
-							<Link href="/contact">Fridge Repair</Link>
-						</li>
-						<li className="hover:text-primary transition-colors">
-							<Link href="/contact">Plumbing Services</Link>
-						</li>
-						<li className="hover:text-primary transition-colors">
-							<Link href="/contact">AC Repair</Link>
-						</li>
-						<li className="hover:text-primary transition-colors">
-							<Link href="/contact">Circuit Upgrades</Link>
-						</li>
-						<li className="hover:text-primary transition-colors">
-							<Link href="/contact">Pipe Replacements</Link>
-						</li>
-					</ul>
 				</div>
 
 				<div>

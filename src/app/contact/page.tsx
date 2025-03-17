@@ -26,7 +26,9 @@ function Contact() {
 							</div>
 							<div>
 								<h5 className="h5 mb-1">Our Address</h5>
-								<p className="text-gray-700">Birkshire, UK</p>
+								<p className="text-gray-700">
+									19, Ragstone Road SL12PP (Slough)
+								</p>
 							</div>
 						</div>
 						<div className="rounded-2xl bg-white p-4 flex gap-4 shadow-soft">
