@@ -95,7 +95,7 @@ function About() {
 						</div>
 						<div>
 							<p className="font-medium mt-1">
-								(+44) 0777 0777 980 <br /> info@fridgemechanics.co.uk
+								0777 0777 980 <br /> info@fridgemechanics.co.uk
 							</p>
 						</div>
 					</Link>

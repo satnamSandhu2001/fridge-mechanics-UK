@@ -13,9 +13,9 @@ const PlusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
 	title: 'Fridge Mechanics | Fridge Repair Berkshire',
 	description:
-		'Fridge Mechanics offers expert fridge repair across Berkshire, including Slough, Bracknell, Reading & more. 24/7 service. Call (+44) 0777 0777 980 for reliable repairs.',
+		'Fridge Mechanics offers expert fridge repair across Berkshire, including Slough, Bracknell, Reading & more. 24/7 service. Call 0777 0777 980 for reliable repairs.',
 	keywords:
-		'fridge repair Berkshire, refrigerator repair Berkshire, appliance repair Berkshire, fridge service Slough, fridge repair Bracknell, fridge repair Reading, fridge repair Maidenhead, fridge repair Newbury, fridge repair Wokingham, 24/7 fridge repair Berkshire, commercial fridge repair Berkshire, home fridge repair Berkshire, (+44) 0777 0777 980, info@fridgemechanics.co.uk',
+		'fridge repair Berkshire, refrigerator repair Berkshire, appliance repair Berkshire, fridge service Slough, fridge repair Bracknell, fridge repair Reading, fridge repair Maidenhead, fridge repair Newbury, fridge repair Wokingham, 24/7 fridge repair Berkshire, commercial fridge repair Berkshire, home fridge repair Berkshire, 0777 0777 980, info@fridgemechanics.co.uk',
 };
 
 export default function RootLayout({

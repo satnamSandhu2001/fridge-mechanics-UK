@@ -35,7 +35,7 @@ function Contact() {
 							</div>
 							<div>
 								<h5 className="h5 mb-1">Phone Number</h5>
-								<p className="text-gray-700">(+44) 0777 0777 980</p>
+								<p className="text-gray-700">0777 0777 980</p>
 							</div>
 						</div>
 						<div className="rounded-2xl bg-white p-4 flex gap-4 shadow-soft">

@@ -19,7 +19,7 @@ function Footer() {
 						<p className="text-sm text-primary">Emergency: </p>
 						<p className="hover:text-primary transition-colors">
 							<Link href="tel:+4407770777980" target="_blank">
-								(+44) 0777 0777 980
+								0777 0777 980
 							</Link>
 						</p>
 					</div>
@@ -58,7 +58,7 @@ function Footer() {
 							<p className="font-semibold">Support: </p>
 							<p className="hover:text-primary transition-colors">
 								<Link href="tel:+4407770777980" target="_blank">
-									(+44) 0777 0777 980
+									0777 0777 980
 								</Link>
 							</p>
 						</div>
