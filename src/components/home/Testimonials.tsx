@@ -36,8 +36,11 @@ function Testimonials() {
 			className="py-16 md:py-32 bg-cover bg-center bg-no-repeat text-white relative"
 			style={{ backgroundImage: `url(${TESTIMONIAL_BG.src})` }}
 		>
-			<div className="container grid lg:grid-cols-2 select-none">
-				<motion.div variants={slideRight}>
+			<motion.div
+				variants={slideRight}
+				className="container flex-1 md:flex-1/2 select-none relative z-20"
+			>
+				<div className="w-full">
 					<p className="text-primary font-medium flex items-center gap-2 h5">
 						<Command size={20} strokeWidth={1.5} className="animate-fan" />
 						Testimonials
@@ -58,14 +61,14 @@ function Testimonials() {
 						preventMovementUntilSwipeScrollTolerance={true}
 					>
 						{testimonials.map((t, i) => (
-							<div key={i} className="mt-10 text-left">
+							<div key={i} className="mt-10 text-left w-full">
 								<div className="text-primary flex">
 									{[1, 2, 3, 4].map((i) => (
 										<Star key={i} />
 									))}
 									<StarHalf />
 								</div>
-								<p className="my-4 max-w-2xl">{t.review}</p>
+								<p className="my-4 w-full max-w-2xl">{t.review}</p>
 								<div className="flex gap-4 mt-6">
 									<div className="bg-primary rounded-full flex items-center justify-center h-16 aspect-square">
 										<User2 size={28} />
@@ -80,14 +83,12 @@ function Testimonials() {
 							</div>
 						))}
 					</Carousel>
-				</motion.div>
-
-				<div />
-			</div>
+				</div>
+			</motion.div>
 
 			<motion.div
 				variants={slideLeft}
-				className="hidden lg:inline-block absolute top-0 right-0 h-full w-[40%] bg-cover bg-left bg-no-repeat"
+				className="hidden lg:inline-block absolute top-0 right-0 h-full w-[25%] xl:w-[40%] bg-cover bg-left bg-no-repeat"
 				style={{ backgroundImage: `url(${TESTIMONIAL_IMG.src})` }}
 			>
 				<div className="w-full h-full relative flex items-center">

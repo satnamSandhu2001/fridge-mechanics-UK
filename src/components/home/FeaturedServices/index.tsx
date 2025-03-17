@@ -14,8 +14,9 @@ function FeaturedServices() {
 			initial="hidden"
 			whileInView="visible"
 			className="py-16 bg-blue-50"
+			id="services"
 		>
-			<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="container">
 				<motion.p
 					variants={slideUp}
 					className="text-primary font-medium flex items-center justify-center gap-2 h5"
@@ -36,7 +37,7 @@ function FeaturedServices() {
 					offer expert services for homes, businesses, and vehicles, ensuring
 					your comfort and convenience.
 				</motion.p>
-				<div className="grid md:grid-cols-3 gap-8 mt-16">
+				<div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 					<motion.div
 						variants={slideUp}
 						className="bg-white rounded-xl shadow-soft overflow-hidden"
@@ -50,9 +51,7 @@ function FeaturedServices() {
 							/>
 						</div>
 						<div className="p-6">
-							<h3 className="text-xl font-bold text-gray-900 mb-3">
-								Domestic Fridge Repair
-							</h3>
+							<h3 className="h5 mb-3">Domestic Fridge Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Is your home fridge not cooling properly? We provide fast and
 								reliable domestic fridge repair services in Berkshire. Our
@@ -119,9 +118,7 @@ function FeaturedServices() {
 							/>
 						</div>
 						<div className="p-6">
-							<h3 className="text-xl font-bold text-gray-900 mb-3">
-								Commercial Fridge Repair
-							</h3>
+							<h3 className="h5 mb-3">Commercial Fridge Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Keep your business running smoothly with our commercial fridge
 								repair services in Berkshire. We handle all types of commercial
@@ -187,9 +184,7 @@ function FeaturedServices() {
 							/>
 						</div>
 						<div className="p-6">
-							<h3 className="text-xl font-bold text-gray-900 mb-3">
-								Car Air Conditioning Repair
-							</h3>
+							<h3 className="h5 mb-3">Car Air Conditioning Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Stay cool on the road with our car air conditioning repair
 								services in Berkshire. We diagnose and fix all AC problems, from
@@ -241,16 +236,18 @@ function FeaturedServices() {
 							</ul>
 						</div>
 					</motion.div>
-				</div>
-
-				<motion.div variants={slideUp} className="mt-6 md:mt-12 text-center">
-					<Link
-						href="/contact"
-						className="flex gap-2 w-fit mx-auto justify-center items-center bg-primary text-white py-3 px-6 rounded-xl text-lg font-medium hover:brightness-95 transition duration-300"
+					<motion.div
+						variants={slideUp}
+						className="mt-6 md:mt-12 text-center self-center lg:col-span-3"
 					>
-						Request a Service <ArrowRight size={20} />
-					</Link>
-				</motion.div>
+						<Link
+							href="/contact"
+							className="flex gap-2 w-fit mx-auto justify-center items-center bg-primary text-white py-3 px-6 rounded-xl text-lg font-medium hover:brightness-95 transition duration-300"
+						>
+							Request a Service <ArrowRight size={20} />
+						</Link>
+					</motion.div>
+				</div>
 			</div>
 		</motion.section>
 	);
