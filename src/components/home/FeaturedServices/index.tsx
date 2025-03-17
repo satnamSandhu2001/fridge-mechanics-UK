@@ -51,7 +51,7 @@ function FeaturedServices() {
 							/>
 						</div>
 						<div className="p-6">
-							<h3 className="h5 mb-3">Domestic Freezer Repair</h3>
+							<h3 className="h5 mb-3">Domestic Fridge Freezer Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Is your home fridge not cooling properly? We provide fast and
 								reliable domestic fridge repair services in Berkshire. Our
@@ -118,7 +118,7 @@ function FeaturedServices() {
 							/>
 						</div>
 						<div className="p-6">
-							<h3 className="h5 mb-3">Commercial Freezer Repair</h3>
+							<h3 className="h5 mb-3">Commercial Fridge Freezer Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Keep your business running smoothly with our commercial fridge
 								repair services in Berkshire. We handle all types of commercial
