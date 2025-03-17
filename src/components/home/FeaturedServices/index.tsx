@@ -45,9 +45,9 @@ function FeaturedServices() {
 						<div className="relative h-48">
 							<Image
 								src={SERVICE_FEATURED}
-								alt="24/7 Emergency Service"
-								layout="fill"
-								objectFit="cover"
+								alt="Domestic Fridge Repair"
+								fill
+								className="object-cover h-full w-full"
 							/>
 						</div>
 						<div className="p-6">
@@ -112,9 +112,9 @@ function FeaturedServices() {
 						<div className="relative h-48">
 							<Image
 								src={FRIDGE_IMG_2}
-								alt="Preventative Maintenance"
-								layout="fill"
-								objectFit="cover"
+								alt="Commercial Fridge Repair in berkshire"
+								fill
+								className="object-cover h-full w-full"
 							/>
 						</div>
 						<div className="p-6">
@@ -178,9 +178,9 @@ function FeaturedServices() {
 						<div className="relative h-48">
 							<Image
 								src={FRIDGE_IMG_3}
-								alt="Expert Installation"
-								layout="fill"
-								objectFit="cover"
+								alt="Car Air Conditioning Repair"
+								fill
+								className="object-cover h-full w-full"
 							/>
 						</div>
 						<div className="p-6">
