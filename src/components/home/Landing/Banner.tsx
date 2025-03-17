@@ -25,7 +25,7 @@ export default function Banner(props: BannerData) {
 				priority
 				className="-z-10 object-cover object-bottom"
 			/>
-			<div className="bg-gradient-to-b md:bg-gradient-to-l from-transparent via-secondary/70 md:via-70% to-secondary/90 absolute top-0 left-0 w-full h-full -z-[9]" />
+			<div className="bg-gradient-to-b md:bg-gradient-to-l from-transparent via-[#252936c9]/70 md:via-70% to-[#252936c9]/90 absolute top-0 left-0 w-full h-full -z-[9]" />
 
 			<div className="container min-h-[85vh] md:min-h-[88vh] flex items-center justify-start flex-col-reverse md:justify-between md:flex-row gap-8 pb-20 md:pb-0">
 				<div>
@@ -33,7 +33,7 @@ export default function Banner(props: BannerData) {
 						variants={slideUp}
 						className="text-primary font-medium flex items-center justify-center md:justify-start gap-2 h5"
 					>
-						<Cog size={22} /> Repairing Services
+						<Cog size={22} /> Repair Services
 					</motion.p>
 					<motion.h1
 						variants={slideUp}

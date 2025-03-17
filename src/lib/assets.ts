@@ -5,10 +5,8 @@ import ABOUT_IMG_1 from '@/assets/about-img-1.webp';
 import ABOUT_IMG_2 from '@/assets/about-img-2.webp';
 import ABOUT_IMG_3 from '@/assets/about-img-3.webp';
 import SERVICE_FEATURED from '@/assets/service-featured.webp';
-import FRIDGE_IMG_1 from '@/assets/fridge-1.webp';
 import FRIDGE_IMG_2 from '@/assets/fridge-2.webp';
 import FRIDGE_IMG_3 from '@/assets/fridge-3.webp';
-import FRIDGE_IMG_4 from '@/assets/fridge-4.webp';
 import CHOOSE_US_ICON_1 from '@/assets/why_chose_us_1.svg';
 import CHOOSE_US_ICON_2 from '@/assets/why_chose_us_2.svg';
 import CHOOSE_US_ICON_3 from '@/assets/why_chose_us_3.svg';
@@ -26,10 +24,8 @@ export {
 	ABOUT_IMG_2,
 	ABOUT_IMG_3,
 	SERVICE_FEATURED,
-	FRIDGE_IMG_1,
 	FRIDGE_IMG_2,
 	FRIDGE_IMG_3,
-	FRIDGE_IMG_4,
 	CHOOSE_US_ICON_1,
 	CHOOSE_US_ICON_2,
 	CHOOSE_US_ICON_3,

@@ -3,8 +3,8 @@ import React from 'react';
 
 function Footer() {
 	return (
-		<footer className="bg-slate-100">
-			<div className="container grid sm:grid-cols-2 md:grid-cols-3 gap-16 py-16 sm:py-32">
+		<footer className="bg-blue-50">
+			<div className="container grid sm:grid-cols-2 md:grid-cols-3 gap-16 py-16 sm:py-20">
 				<div>
 					<h5 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
 						About Us

@@ -4,7 +4,28 @@ import { TESTIMONIAL_BG, TESTIMONIAL_IMG } from '@/lib/assets';
 import { slideLeft, slideRight, staggerChildrenVariant } from '@/lib/framer';
 import { motion } from 'framer-motion';
 import { Command, MapPin, Quote, Star, StarHalf, User2 } from 'lucide-react';
-import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+
+const testimonials = [
+	{
+		name: 'Sarah Thompson',
+		review:
+			'Our fridge broke down on a Friday night, and we were worried about losing all our food. Fridge Mechanics came out within the hour and had it fixed quickly and efficiently. Fantastic service! Highly recommended.',
+		location: 'Slough, Berkshire',
+	},
+	{
+		name: 'David Miller',
+		review:
+			'As a small business owner, a working commercial fridge is essential. Fridge Mechanics provided a fast and reliable repair, minimizing any disruption to my business. Very professional and reasonably priced.',
+		location: 'Reading, Berkshire',
+	},
+	{
+		name: 'Emily Carter',
+		review:
+			"My car's air conditioning stopped working during a heatwave, which was unbearable! Fridge Mechanics fixed it promptly and were very knowledgeable. I'm so grateful for their excellent service.",
+		location: 'Maidenhead, Berkshire',
+	},
+];
 
 function Testimonials() {
 	return (
@@ -15,7 +36,7 @@ function Testimonials() {
 			className="py-16 md:py-32 bg-cover bg-center bg-no-repeat text-white relative"
 			style={{ backgroundImage: `url(${TESTIMONIAL_BG.src})` }}
 		>
-			<div className="container grid lg:grid-cols-2">
+			<div className="container grid lg:grid-cols-2 select-none">
 				<motion.div variants={slideRight}>
 					<p className="text-primary font-medium flex items-center gap-2 h5">
 						<Command size={20} strokeWidth={1.5} className="animate-fan" />
@@ -23,33 +44,44 @@ function Testimonials() {
 					</p>
 
 					<h3 className="h1 mt-2">Our Clients Feedback</h3>
-
-					<div className="mt-10">
-						<div className="text-primary flex">
-							{[1, 2, 3, 4].map((i) => (
-								<Star key={i} />
-							))}
-							<StarHalf />
-						</div>
-						<p className="my-4 max-w-2xl">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-							eveniet. Eligendi voluptatibus nisi odit dignissimos consequuntur
-							cupiditate temporibus odio nobis consectetur rem quo ratione esse
-							maiores, corrupti quaerat voluptas earum.
-						</p>
-						<div className="flex gap-4 mt-6">
-							<div className="bg-primary rounded-full flex items-center justify-center h-16 aspect-square">
-								<User2 size={28} />
+					<Carousel
+						autoPlay
+						emulateTouch
+						infiniteLoop
+						stopOnHover={false}
+						showIndicators={false}
+						showThumbs={false}
+						showStatus={false}
+						transitionTime={800}
+						interval={7000}
+						showArrows={false}
+						preventMovementUntilSwipeScrollTolerance={true}
+					>
+						{testimonials.map((t, i) => (
+							<div key={i} className="mt-10 text-left">
+								<div className="text-primary flex">
+									{[1, 2, 3, 4].map((i) => (
+										<Star key={i} />
+									))}
+									<StarHalf />
+								</div>
+								<p className="my-4 max-w-2xl">{t.review}</p>
+								<div className="flex gap-4 mt-6">
+									<div className="bg-primary rounded-full flex items-center justify-center h-16 aspect-square">
+										<User2 size={28} />
+									</div>
+									<div>
+										<h6 className="h6 mb-2 text-primary">{t.name}</h6>
+										<p className="flex items-center gap-2 text-gray-400">
+											<MapPin size={18} /> {t.location}
+										</p>
+									</div>
+								</div>
 							</div>
-							<div>
-								<h6 className="h6 mb-2 text-primary">John Doe</h6>
-								<p className="flex items-center gap-2 text-gray-400">
-									<MapPin size={18} /> Birkshire
-								</p>
-							</div>
-						</div>
-					</div>
+						))}
+					</Carousel>
 				</motion.div>
+
 				<div />
 			</div>
 

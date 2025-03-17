@@ -13,7 +13,7 @@ function PageBreadcrumb({ title, breadcrumb }: Props) {
 			className="bg-cover bg-no-repeat bg-center relative"
 			style={{ backgroundImage: `url(${BREADCRUMB_BG.src})` }}
 		>
-			<div className="absolute top-0 left-0 w-full h-full bg-secondary/70" />
+			<div className="absolute top-0 left-0 w-full h-full bg-[#1a2c61c9]" />
 			<div className="container min-h-[30vh] md:min-h-[35vh] flex items-center justify-center flex-col relative z-10 text-white">
 				<h3 className="h1">{title}</h3>
 

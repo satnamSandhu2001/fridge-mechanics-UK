@@ -30,7 +30,7 @@ function Navbar() {
 
 	return (
 		<nav className="relative z-50 bg-white">
-			<div className="bg-slate-100">
+			<div className="bg-blue-50">
 				<div className="container py-2 text-primary font-medium text-sm md:text-base flex flex-col sm:flex-row justify-between items-center">
 					<Link
 						href="tel:+4407770777980"

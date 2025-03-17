@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const slides: BannerData[] = [
 	{
-		title: 'Freezer, Ice maker and Refirgerator repair services',
+		title: 'Domestic and commercial fridge repair service',
 		bg: SLIDE_1,
 	},
 	{
@@ -13,7 +13,6 @@ const slides: BannerData[] = [
 		bg: SLIDE_2,
 	},
 ];
-
 function Landing() {
 	return (
 		<>

@@ -54,7 +54,7 @@ function Contact() {
 							</div>
 							<div>
 								<h5 className="h5 mb-1">Working Time</h5>
-								<p className="text-gray-700">We are available 27/7</p>
+								<p className="text-gray-700">We are available 24/7</p>
 							</div>
 						</div>
 					</div>
