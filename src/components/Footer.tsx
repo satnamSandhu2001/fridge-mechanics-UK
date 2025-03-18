@@ -10,10 +10,9 @@ function Footer() {
 						About Us
 					</h5>
 					<p>
-						We&apos;ve been providing dependable fridge repairing, plumbing, and
-						electrical services from decade. Our skilled technicians are
-						committed to delivering quality repairs and installations you can
-						count on.
+						We&apos;ve been providing dependable fridge repairing service from
+						decade. Our skilled technicians are committed to delivering quality
+						repairs and installations you can count on.
 					</p>
 					<div className="font-bold mt-3">
 						<p className="text-sm text-primary">Emergency: </p>

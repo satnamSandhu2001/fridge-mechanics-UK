@@ -9,7 +9,7 @@ const questions = [
 	{
 		question: 'Where do you provide service?',
 		answer:
-			'We proudly provide our electrical and plumbing services throughout the entire county of Berkshire, including major towns such as Slough, Bracknell, Maidenhead, Reading, Newbury, Wokingham, and all surrounding areas. Please contact us to confirm if we serve your specific location.',
+			'We proudly provide our fridge repair services throughout the entire county of Berkshire, including major towns such as Slough, Bracknell, Maidenhead, Reading, Newbury, Wokingham, and all surrounding areas. Please contact us to confirm if we service your specific location for fridge repairs.',
 	},
 	{
 		question: 'What types of fridges do you repair?',
@@ -57,9 +57,8 @@ function FAQ() {
 				</motion.h3>
 				<motion.p variants={slideUp} className="mt-4 text-gray-500 max-w-4xl">
 					We&apos;ve compiled a list of frequently asked questions to help you
-					understand our electrical and plumbing services. If you don&apos;t
-					find the answer you&apos;re looking for, please don&apos;t hesitate to
-					contact us.
+					understand services. If you don&apos;t find the answer you&apos;re
+					looking for, please don&apos;t hesitate to contact us.
 				</motion.p>
 
 				<div className="mt-8 space-y-4">
