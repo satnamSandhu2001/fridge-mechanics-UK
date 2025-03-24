@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const slides: BannerData[] = [
 	{
-		title: 'Display, Commercial and Americans Fridge, Freezer Repair',
+		title: 'Domestic, Commercial and Display Fridge, Freezer Repair',
 		bg: SLIDE_1,
 		hero_img: FRIDGE_HERO_1,
 	},
