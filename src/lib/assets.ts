@@ -1,8 +1,7 @@
 import LOGO from '@/assets/logo.png';
 import SLIDE_1 from '@/assets/slide1.webp';
 import SLIDE_2 from '@/assets/slide2.webp';
-import FRIDGE_HERO_1 from '@/assets/fridge-hero.png';
-import FRIDGE_HERO_2 from '@/assets/fridge-hero-2.png';
+import FRIDGE_HERO from '@/assets/fridge-hero.png';
 import ABOUT_IMG_1 from '@/assets/about-img-1.webp';
 import ABOUT_IMG_2 from '@/assets/about-img-2.webp';
 import ABOUT_IMG_3 from '@/assets/about-img-3.webp';
@@ -30,8 +29,7 @@ export {
 	LOGO,
 	SLIDE_1,
 	SLIDE_2,
-	FRIDGE_HERO_1,
-	FRIDGE_HERO_2,
+	FRIDGE_HERO,
 	ABOUT_IMG_1,
 	ABOUT_IMG_2,
 	ABOUT_IMG_3,
