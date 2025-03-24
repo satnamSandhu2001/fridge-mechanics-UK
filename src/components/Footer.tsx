@@ -11,7 +11,7 @@ function Footer() {
 					</h5>
 					<p>
 						We&apos;ve been providing dependable fridge freezer repairing
-						service for over a decade-. Our skilled technicians are committed to
+						service for over a decade. Our skilled technicians are committed to
 						delivering quality repairs and installations you can count on.
 					</p>
 					<div className="font-bold mt-3">
