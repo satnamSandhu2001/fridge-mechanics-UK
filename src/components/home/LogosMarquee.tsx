@@ -39,7 +39,7 @@ function LogosMarquee() {
 						key={index}
 						src={logo}
 						alt={`Logo ${index + 1}`}
-						className="h-10 w-auto object-contain"
+						className="h-12 w-auto object-contain"
 					/>
 				))}
 			</motion.div>
