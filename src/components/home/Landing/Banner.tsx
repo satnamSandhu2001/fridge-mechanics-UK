@@ -8,6 +8,7 @@ import { slideUp, staggerChildrenVariant } from '@/lib/framer';
 export interface BannerData {
 	title: string;
 	bg: StaticImageData;
+	hero_img?: StaticImageData;
 }
 
 export default function Banner(props: BannerData) {
@@ -50,6 +51,15 @@ export default function Banner(props: BannerData) {
 						</Link>
 					</motion.div>
 				</div>
+				{props.hero_img && (
+					<div className="md:hidden">
+						<Image
+							src={props.hero_img}
+							alt="fridge repair in Buckinghamshire"
+							className="w-full drop-shadow-2xl"
+						/>
+					</div>
+				)}
 			</div>
 		</motion.div>
 	);

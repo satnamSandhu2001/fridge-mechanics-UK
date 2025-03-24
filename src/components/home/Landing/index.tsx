@@ -1,21 +1,19 @@
 'use client';
-import { SLIDE_1, SLIDE_2, SLIDE_3 } from '@/lib/assets';
+import { FRIDGE_HERO_1, FRIDGE_HERO_2, SLIDE_1, SLIDE_2 } from '@/lib/assets';
 import Banner, { BannerData } from './Banner';
 import { Carousel } from 'react-responsive-carousel';
 
 const slides: BannerData[] = [
 	{
-		title: 'Display, Commercial and Americans Fridge Freezer Repair',
+		title: 'Display, Commercial and Americans Fridge, Freezer Repair',
 		bg: SLIDE_1,
+		hero_img: FRIDGE_HERO_1,
 	},
+
 	{
-		title:
-			'Domestic and Commercial Fridge Freezer Repair and Maintenance Services',
+		title: '24/7 Fridge, Freezer Repair, Call Us Anytime. Fast Service.',
 		bg: SLIDE_2,
-	},
-	{
-		title: '24/7 Fridge Freezer Repair, Call Us Anytime. Fast Service.',
-		bg: SLIDE_3,
+		hero_img: FRIDGE_HERO_2,
 	},
 ];
 function Landing() {
@@ -38,7 +36,6 @@ function Landing() {
 					<Banner key={i} {...item} />
 				))}
 			</Carousel>
-			{/* <Banner {...slides[0]} /> */}
 		</>
 	);
 }
