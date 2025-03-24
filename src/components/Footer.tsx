@@ -10,8 +10,8 @@ function Footer() {
 						About Us
 					</h5>
 					<p>
-						We&apos;ve been providing depends fridge freezer repairing service
-						for over a decade-. Our skilled technicians are committed to
+						We&apos;ve been providing dependable fridge freezer repairing
+						service for over a decade-. Our skilled technicians are committed to
 						delivering quality repairs and installations you can count on.
 					</p>
 					<div className="font-bold mt-3">
