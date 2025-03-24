@@ -9,12 +9,12 @@ const questions = [
 	{
 		question: 'Where do you provide service?',
 		answer:
-			'We proudly provide our fridge repair services throughout the entire county of Berkshire, including major towns such as Slough, Bracknell, Maidenhead, Reading, Newbury, Wokingham, and all surrounding areas. Please contact us to confirm if we service your specific location for fridge repairs.',
+			'We proudly provide our fridge repair services throughout the entire county of Buckinghamshire, including major towns such as Slough, Bracknell, Maidenhead, Reading, Newbury, Wokingham, and all surrounding areas. Please contact us to confirm if we service your specific location for fridge repairs.',
 	},
 	{
 		question: 'What types of fridges do you repair?',
 		answer:
-			'We repair all types of fridges, including single door, double door, side-by-side, deep freezers, inverter fridges, and more.',
+			'We repair all types of fridges like LG, Samsung, Whirlpool, GE, Bosch, KitchenAid, Sub-Zero, and Monogram and hotpoint and all American fridges',
 	},
 	{
 		question: 'Do you offer emergency fridge repair services?',

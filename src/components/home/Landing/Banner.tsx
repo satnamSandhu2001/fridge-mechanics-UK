@@ -27,7 +27,7 @@ export default function Banner(props: BannerData) {
 			/>
 			<div className="bg-gradient-to-b md:bg-gradient-to-l from-transparent via-[#252936c9]/70 md:via-70% to-[#252936c9]/90 absolute top-0 left-0 w-full h-full -z-[9]" />
 
-			<div className="container min-h-[85vh] md:min-h-[88vh] flex items-center justify-start flex-col-reverse md:justify-between md:flex-row gap-8 pb-20 md:pb-0">
+			<div className="container min-h-[75vh] md:min-h-[88vh] flex items-center justify-start flex-col-reverse md:justify-between md:flex-row gap-8 pb-20 md:pb-0">
 				<div>
 					<motion.p
 						variants={slideUp}
@@ -37,7 +37,7 @@ export default function Banner(props: BannerData) {
 					</motion.p>
 					<motion.h1
 						variants={slideUp}
-						className="text-center md:text-left text-white text-4xl leading-snug sm:text-5xl sm:leading-tight xl:text-6xl xl:leading-tight 2xl:text-7xl 2xl:leading-tight 2xl:max-w-3xl font-bold max-w-xl tracking-wide"
+						className="text-center md:text-left text-white text-4xl leading-snug sm:text-5xl sm:leading-tight xl:text-6xl xl:leading-snug 2xl:max-w-3xl font-bold max-w-xl tracking-wide"
 					>
 						{props.title}
 					</motion.h1>

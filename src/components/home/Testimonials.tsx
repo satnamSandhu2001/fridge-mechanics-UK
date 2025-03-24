@@ -11,19 +11,19 @@ const testimonials = [
 		name: 'Sarah Thompson',
 		review:
 			'Our fridge broke down on a Friday night, and we were worried about losing all our food. Fridge Mechanics came out within the hour and had it fixed quickly and efficiently. Fantastic service! Highly recommended.',
-		location: 'Slough, Berkshire',
+		location: 'Slough, Buckinghamshire',
 	},
 	{
 		name: 'David Miller',
 		review:
 			'As a small business owner, a working commercial fridge is essential. Fridge Mechanics provided a fast and reliable repair, minimizing any disruption to my business. Very professional and reasonably priced.',
-		location: 'Reading, Berkshire',
+		location: 'Reading, Buckinghamshire',
 	},
 	{
 		name: 'Emily Carter',
 		review:
 			"My car's air conditioning stopped working during a heatwave, which was unbearable! Fridge Mechanics fixed it promptly and were very knowledgeable. I'm so grateful for their excellent service.",
-		location: 'Maidenhead, Berkshire',
+		location: 'Maidenhead, Buckinghamshire',
 	},
 ];
 

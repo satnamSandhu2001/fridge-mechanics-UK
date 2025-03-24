@@ -54,7 +54,7 @@ function FeaturedServices() {
 							<h3 className="h5 mb-3">Domestic Fridge Freezer Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Is your home fridge not cooling properly? We provide fast and
-								reliable domestic fridge repair services in Berkshire. Our
+								reliable domestic fridge repair services in Buckinghamshire. Our
 								experienced technicians can fix all types of residential
 								fridges.
 							</p>
@@ -112,7 +112,7 @@ function FeaturedServices() {
 						<div className="relative h-48">
 							<Image
 								src={FRIDGE_IMG_2}
-								alt="Commercial Fridge Repair in berkshire"
+								alt="Commercial Fridge Repair in Buckinghamshire"
 								fill
 								className="object-cover h-full w-full"
 							/>
@@ -121,8 +121,8 @@ function FeaturedServices() {
 							<h3 className="h5 mb-3">Commercial Fridge Freezer Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Keep your business running smoothly with our commercial fridge
-								repair services in Berkshire. We handle all types of commercial
-								refrigeration units, ensuring minimal downtime.
+								repair services in Buckinghamshire. We handle all types of
+								commercial refrigeration units, ensuring minimal downtime.
 							</p>
 							<ul className="space-y-2 text-gray-600">
 								<li className="flex items-start">
@@ -187,8 +187,9 @@ function FeaturedServices() {
 							<h3 className="h5 mb-3">Car Air Conditioning Repair</h3>
 							<p className="text-gray-600 mb-4">
 								Stay cool on the road with our car air conditioning repair
-								services in Berkshire. We diagnose and fix all AC problems, from
-								leaks to compressor issues, ensuring your comfort.
+								services in Buckinghamshire. We diagnose and fix all AC
+								problems, from leaks to compressor issues, ensuring your
+								comfort.
 							</p>
 							<ul className="space-y-2 text-gray-600">
 								<li className="flex items-start">
