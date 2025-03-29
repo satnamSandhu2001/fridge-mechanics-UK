@@ -19,7 +19,7 @@ function Card(props: Props) {
 				alt={props.title}
 				className="object-contain h-24 w-auto"
 			/>
-			<h5 className="h6">{props.title}</h5>
+			<h4 className="h6">{props.title}</h4>
 			<p className="text-gray-500 mt-2">{props.desc}</p>
 		</motion.div>
 	);

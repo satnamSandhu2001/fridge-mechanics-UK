@@ -74,7 +74,7 @@ function Testimonials() {
 											<User2 size={28} />
 										</div>
 										<div>
-											<h6 className="h6 mb-2 text-primary">{t.name}</h6>
+											<h5 className="h6 mb-2 text-primary">{t.name}</h5>
 											<p className="flex items-center gap-2 text-gray-400">
 												<MapPin size={18} /> {t.location}
 											</p>

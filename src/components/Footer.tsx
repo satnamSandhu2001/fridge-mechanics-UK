@@ -6,9 +6,9 @@ function Footer() {
 		<footer className="bg-blue-50">
 			<div className="container grid sm:grid-cols-2 gap-x-24 gap-y-8 py-16 sm:py-20">
 				<div>
-					<h5 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
+					<h4 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
 						About Us
-					</h5>
+					</h4>
 					<p>
 						We&apos;ve been providing a dependable fridge freezer repair service
 						for over a decade. Our skilled technicians are committed to
@@ -25,9 +25,9 @@ function Footer() {
 				</div>
 
 				<div>
-					<h5 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
+					<h4 className="relative mb-6 h5 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-8 before:bg-primary before:h-1 before:rounded-full">
 						Contact Info
-					</h5>
+					</h4>
 
 					<div className="space-y-2">
 						<div>

@@ -10,11 +10,11 @@ const PlusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-	title: 'Fridge Mechanic in Buckinghamshire & Slough',
+	title: 'Fridge & Freezer Repair in Slough',
 	description:
 		'Fridge Mechanics offers expert fridge repair across Buckinghamshire including slough, Bracknell, Reading. Call 0777 0777 980 for reliable repairs',
 	keywords:
-		'fridge mechanic slough, refrigerator repair Buckinghamshire, appliance repair Buckinghamshire, fridge service Slough, fridge repair Bracknell, fridge repair Reading, fridge repair Maidenhead, fridge repair Newbury, fridge repair Wokingham, 24/7 fridge repair Buckinghamshire, commercial fridge repair Buckinghamshire, home fridge repair Buckinghamshire, 0777 0777 980, info@fridgemechanics.co.uk',
+		'fridge mechanic slough, fridge repair slough, refrigerator repair Buckinghamshire, appliance repair Buckinghamshire, fridge service Slough, fridge repair Bracknell, fridge repair Reading, fridge repair Maidenhead, fridge repair Newbury, fridge repair Wokingham, 24/7 fridge repair Buckinghamshire, commercial fridge repair Buckinghamshire, home fridge repair Buckinghamshire, 0777 0777 980, info@fridgemechanics.co.uk',
 };
 
 export default function RootLayout({

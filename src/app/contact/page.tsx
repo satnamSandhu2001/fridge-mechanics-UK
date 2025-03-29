@@ -25,7 +25,7 @@ function Contact() {
 								<MapPin size={35} strokeWidth={2} />
 							</div>
 							<div>
-								<h5 className="h5 mb-1">Our Address</h5>
+								<h4 className="h5 mb-1">Our Address</h4>
 								<p className="text-gray-700">
 									19, Ragstone Road SL12PP (Slough)
 								</p>
@@ -36,7 +36,7 @@ function Contact() {
 								<PhoneCall size={35} strokeWidth={2} />
 							</div>
 							<div>
-								<h5 className="h5 mb-1">Phone Number</h5>
+								<h4 className="h5 mb-1">Phone Number</h4>
 								<p className="text-gray-700">0777 0777 980</p>
 							</div>
 						</div>
@@ -45,7 +45,7 @@ function Contact() {
 								<Mail size={35} strokeWidth={2} />
 							</div>
 							<div>
-								<h5 className="h5 mb-1">Email Address</h5>
+								<h4 className="h5 mb-1">Email Address</h4>
 								<p className="text-gray-700">info@fridgemechanics.co.uk</p>
 							</div>
 						</div>
@@ -55,7 +55,7 @@ function Contact() {
 								<Clock size={35} strokeWidth={2} />
 							</div>
 							<div>
-								<h5 className="h5 mb-1">Working Time</h5>
+								<h4 className="h5 mb-1">Working Time</h4>
 								<p className="text-gray-700">We are available 24/7</p>
 							</div>
 						</div>
