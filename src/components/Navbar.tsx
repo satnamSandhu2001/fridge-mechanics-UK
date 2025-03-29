@@ -40,7 +40,7 @@ function Navbar() {
 						<PhoneCallIcon size={15} /> 0777 0777 980
 					</Link>
 					<Link
-						href="mail:info@fridgemechanics.co.uk"
+						href="mailto:info@fridgemechanics.co.uk"
 						target="_blank"
 						className="flex items-center gap-x-2"
 					>

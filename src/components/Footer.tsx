@@ -41,7 +41,7 @@ function Footer() {
 						<div>
 							<p className="font-semibold">Email: </p>
 							<p className="hover:text-primary transition-colors">
-								<Link href="mail:info@fridgemechanics.co.uk" target="_blank">
+								<Link href="mailto:info@fridgemechanics.co.uk" target="_blank">
 									info@fridgemechanics.co.uk
 								</Link>
 							</p>
