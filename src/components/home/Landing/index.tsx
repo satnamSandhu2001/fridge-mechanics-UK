@@ -5,12 +5,14 @@ import { Carousel } from 'react-responsive-carousel';
 
 const slides: BannerData[] = [
 	{
+		index: 1,
 		title: 'Domestic, Commercial and Display Fridge, Freezer Repair',
 		bg: SLIDE_1,
 		hero_img: FRIDGE_HERO,
 	},
 
 	{
+		index: 2,
 		title: '24/7 Fridge, Freezer Repair, Call Us Anytime. Fast Service.',
 		bg: SLIDE_2,
 	},

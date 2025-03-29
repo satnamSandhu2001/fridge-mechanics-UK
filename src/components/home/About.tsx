@@ -24,7 +24,7 @@ function About() {
 					<div className="h-full w-full relative rounded-xl overflow-hidden">
 						<Image
 							src={ABOUT_IMG_1}
-							alt="Air conditioner mechanic in Buckinghamshire"
+							alt="Air conditioner mechanic in slough"
 							fill
 							className="object-cover"
 						/>
@@ -33,7 +33,7 @@ function About() {
 						<div className="h-full w-full relative rounded-xl overflow-hidden">
 							<Image
 								src={ABOUT_IMG_2}
-								alt="Plumber in Buckinghamshire"
+								alt="Fridge mechanic in slough"
 								fill
 								className="object-cover"
 							/>
@@ -41,7 +41,7 @@ function About() {
 						<div className="h-full w-full relative rounded-xl overflow-hidden">
 							<Image
 								src={ABOUT_IMG_3}
-								alt="Refrigerator mechanic in Buckinghamshire"
+								alt="Freezer mechanic in slough"
 								fill
 								className="object-cover"
 							/>
