@@ -1,7 +1,8 @@
 'use client';
 import { FRIDGE_HERO, SLIDE_1, SLIDE_2 } from '@/lib/assets';
 import Banner, { BannerData } from './Banner';
-import { Carousel } from 'react-responsive-carousel';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
 
 const slides: BannerData[] = [
 	{
@@ -10,7 +11,6 @@ const slides: BannerData[] = [
 		bg: SLIDE_1,
 		hero_img: FRIDGE_HERO,
 	},
-
 	{
 		index: 2,
 		title: '24/7 Fridge, Freezer Repair, Call Us Anytime. Fast Service.',
@@ -20,23 +20,24 @@ const slides: BannerData[] = [
 function Landing() {
 	return (
 		<>
-			<Carousel
-				autoPlay
-				emulateTouch
-				infiniteLoop
-				stopOnHover={false}
-				showIndicators={false}
-				showThumbs={false}
-				showStatus={false}
-				transitionTime={800}
-				interval={7000}
-				showArrows={false}
-				preventMovementUntilSwipeScrollTolerance={true}
+			<Swiper
+				modules={[Autoplay]}
+				autoplay={{ delay: 7000, disableOnInteraction: false }}
+				loop={true}
+				speed={800}
+				spaceBetween={50}
+				slidesPerView={1}
+				touchRatio={1}
+				grabCursor={true}
+				preventInteractionOnTransition={true}
+				allowTouchMove
 			>
 				{slides.map((item, i) => (
-					<Banner key={i} {...item} />
+					<SwiperSlide key={i}>
+						<Banner {...item} />
+					</SwiperSlide>
 				))}
-			</Carousel>
+			</Swiper>
 		</>
 	);
 }

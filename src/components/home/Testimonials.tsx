@@ -4,7 +4,8 @@ import { TESTIMONIAL_BG, TESTIMONIAL_IMG } from '@/lib/assets';
 import { slideLeft, slideRight, staggerChildrenVariant } from '@/lib/framer';
 import { motion } from 'framer-motion';
 import { Command, MapPin, Quote, Star, StarHalf, User2 } from 'lucide-react';
-import { Carousel } from 'react-responsive-carousel';
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const testimonials = [
 	{
@@ -47,42 +48,42 @@ function Testimonials() {
 					</p>
 
 					<h3 className="h1 mt-2">Our Clients Feedback</h3>
-					<Carousel
-						autoPlay
-						emulateTouch
-						infiniteLoop
-						stopOnHover={false}
-						showIndicators={false}
-						showThumbs={false}
-						showStatus={false}
-						transitionTime={800}
-						interval={7000}
-						showArrows={false}
-						preventMovementUntilSwipeScrollTolerance={true}
+					<Swiper
+						modules={[Autoplay]}
+						autoplay={{ delay: 7000, disableOnInteraction: false }}
+						loop={true}
+						speed={800}
+						spaceBetween={50}
+						slidesPerView={1}
+						grabCursor={true}
+						preventInteractionOnTransition={true}
+						allowTouchMove
 					>
 						{testimonials.map((t, i) => (
-							<div key={i} className="mt-10 text-left w-full">
-								<div className="text-primary flex">
-									{[1, 2, 3, 4].map((i) => (
-										<Star key={i} />
-									))}
-									<StarHalf />
-								</div>
-								<p className="my-4 w-full max-w-2xl">{t.review}</p>
-								<div className="flex gap-4 mt-6">
-									<div className="bg-primary rounded-full flex items-center justify-center h-16 aspect-square">
-										<User2 size={28} />
+							<SwiperSlide key={i}>
+								<div className="mt-10 text-left w-full">
+									<div className="text-primary flex">
+										{[1, 2, 3, 4].map((i) => (
+											<Star key={i} />
+										))}
+										<StarHalf />
 									</div>
-									<div>
-										<h6 className="h6 mb-2 text-primary">{t.name}</h6>
-										<p className="flex items-center gap-2 text-gray-400">
-											<MapPin size={18} /> {t.location}
-										</p>
+									<p className="my-4 w-full max-w-2xl">{t.review}</p>
+									<div className="flex gap-4 mt-6">
+										<div className="bg-primary rounded-full flex items-center justify-center h-16 aspect-square">
+											<User2 size={28} />
+										</div>
+										<div>
+											<h6 className="h6 mb-2 text-primary">{t.name}</h6>
+											<p className="flex items-center gap-2 text-gray-400">
+												<MapPin size={18} /> {t.location}
+											</p>
+										</div>
 									</div>
 								</div>
-							</div>
+							</SwiperSlide>
 						))}
-					</Carousel>
+					</Swiper>
 				</div>
 			</motion.div>
 

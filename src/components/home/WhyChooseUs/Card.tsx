@@ -17,7 +17,7 @@ function Card(props: Props) {
 			<Image
 				src={props.icon}
 				alt={props.title}
-				className="object-contain h-24"
+				className="object-contain h-24 w-auto"
 			/>
 			<h5 className="h6">{props.title}</h5>
 			<p className="text-gray-500 mt-2">{props.desc}</p>

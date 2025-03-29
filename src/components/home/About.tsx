@@ -26,6 +26,7 @@ function About() {
 							src={ABOUT_IMG_1}
 							alt="Air conditioner mechanic in slough"
 							fill
+							sizes="(max-width: 768px) 100vw, 50vw"
 							className="object-cover"
 						/>
 					</div>
@@ -35,6 +36,7 @@ function About() {
 								src={ABOUT_IMG_2}
 								alt="Fridge mechanic in slough"
 								fill
+								sizes="(max-width: 768px) 100vw, 50vw"
 								className="object-cover"
 							/>
 						</div>
@@ -43,6 +45,7 @@ function About() {
 								src={ABOUT_IMG_3}
 								alt="Freezer mechanic in slough"
 								fill
+								sizes="(max-width: 768px) 100vw, 50vw"
 								className="object-cover"
 							/>
 						</div>
@@ -104,5 +107,4 @@ function About() {
 		</motion.section>
 	);
 }
-
 export default About;

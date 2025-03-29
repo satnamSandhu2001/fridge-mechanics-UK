@@ -47,6 +47,7 @@ function FeaturedServices() {
 								src={SERVICE_FEATURED}
 								alt="Domestic Fridge Repair"
 								fill
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								className="object-cover h-full w-full"
 							/>
 						</div>
@@ -114,6 +115,7 @@ function FeaturedServices() {
 								src={FRIDGE_IMG_2}
 								alt="Commercial Fridge Repair in Buckinghamshire"
 								fill
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								className="object-cover h-full w-full"
 							/>
 						</div>
@@ -180,6 +182,7 @@ function FeaturedServices() {
 								src={FRIDGE_IMG_3}
 								alt="Car Air Conditioning Repair"
 								fill
+								sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 								className="object-cover h-full w-full"
 							/>
 						</div>
