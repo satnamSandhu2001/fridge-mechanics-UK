@@ -11,6 +11,18 @@ function ContactForm() {
 			<h4 className="h4 text-center">Book An Appointment</h4>
 
 			<form action={formAction} className="mt-10 w-full space-y-4">
+				{/* Honeypot field */}
+				<div style={{ position: 'absolute', left: '-5000px', opacity: 0 }}>
+					<label htmlFor="website">Website</label>
+					<input
+						name="website"
+						type="text"
+						tabIndex={-1}
+						autoComplete="off"
+						id="website"
+					/>
+				</div>
+
 				<input
 					name="name"
 					type="text"

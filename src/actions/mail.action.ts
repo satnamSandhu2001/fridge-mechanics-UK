@@ -19,6 +19,11 @@ export async function sendEmail(prevState: unknown, formData: FormData) {
 	const phone = formData.get('phone') as string;
 	const message = formData.get('message') as string;
 
+	if (formData.get('website')) {
+		console.log('Spam message detected : ', { name, email, phone, message });
+		return { error: 'Spam detected!' };
+	}
+
 	if (!message || !phone || !name) {
 		return {
 			error: 'Please fill all fields!',
