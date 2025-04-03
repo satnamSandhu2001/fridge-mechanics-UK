@@ -1,7 +1,6 @@
 import ContactForm from '@/components/ContactForm';
 import PageBreadcrumb from '@/components/PageBreadcrumb';
 import { Clock, Mail, MapPin, PhoneCall } from 'lucide-react';
-import React from 'react';
 
 function Contact() {
 	return (

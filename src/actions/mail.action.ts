@@ -18,15 +18,35 @@ export async function sendEmail(prevState: unknown, formData: FormData) {
 	const email = formData.get('email') as string;
 	const phone = formData.get('phone') as string;
 	const message = formData.get('message') as string;
-
-	if (formData.get('website')) {
-		console.log('Spam message detected : ', { name, email, phone, message });
-		return { error: 'Spam detected!' };
-	}
+	const captchaToken = formData.get('captchaToken') as string;
 
 	if (!message || !phone || !name) {
 		return {
 			error: 'Please fill all fields!',
+		};
+	}
+
+	// Honeypot spam detection
+	if (formData.get('website')) {
+		console.log('Spam message detected : ', { name, email, phone, message });
+		return { error: 'Spam detected!' };
+	}
+	// Verify reCAPTCHA
+	const verifyRecaptcha = async (token: string) => {
+		const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+		const response = await fetch(
+			`https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${token}`,
+			{ method: 'POST' }
+		);
+		const data = await response.json();
+		return data.success;
+	};
+
+	const isHuman = await verifyRecaptcha(captchaToken);
+
+	if (!isHuman) {
+		return {
+			error: 'Captcha verification failed. Please try again.',
 		};
 	}
 
